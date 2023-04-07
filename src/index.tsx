@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   #root {
     height: 100vh;
     width: 100%;
