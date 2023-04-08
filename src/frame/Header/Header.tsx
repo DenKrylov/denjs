@@ -6,7 +6,7 @@ export const Header = () => {
       <p>Logo</p>
       <LinkListHeader>
         <ListElementHeader><LinkElementHeader href={"https://t.me/@denkrylov"}>T</LinkElementHeader></ListElementHeader>
-        <ListElementHeader><LinkElementHeader href={"https://t.me/@denkrylov"}>W</LinkElementHeader></ListElementHeader>
+        <ListElementHeader><LinkElementHeader href={"http://ttttt.me/andrei_afreeca"}>W</LinkElementHeader></ListElementHeader>
         <ListElementHeader><LinkElementHeader href={"https://t.me/@denkrylov"}>I</LinkElementHeader></ListElementHeader>
         <ListElementHeader><LinkElementHeader href={"https://t.me/@denkrylov"}>K</LinkElementHeader></ListElementHeader>
       </LinkListHeader>

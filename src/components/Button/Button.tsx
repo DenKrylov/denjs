@@ -1,13 +1,26 @@
 import { WrapperButton } from "./ButtonStyle";
 
 interface IButton {
-  content?: string;
+  children: JSX.Element;
+  height?: number;
+  width?: number;
+  active?: boolean;
+  disable?: boolean;
+  onTouch: Function;
 }
 
 export const Button = (props: IButton) => {
-  const {content} = props;
+  const {children, height=3, width=10, active=false, disable=false, onTouch} = props;
 
   return (
-    <WrapperButton>{ content }</WrapperButton>
+    <WrapperButton
+      height={height}
+      width={width}
+      active={active}
+      disable={disable}
+      onClick={() => onTouch()}
+    >
+      { children }
+    </WrapperButton>
   )
 }

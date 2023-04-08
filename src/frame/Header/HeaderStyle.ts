@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const WrapperHeader = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;
 
 export const LinkListHeader = styled.ul`
@@ -12,9 +18,7 @@ export const LinkListHeader = styled.ul`
 `;
 
 export const ListElementHeader = styled.li`
-  
 `;
 
 export const LinkElementHeader = styled.a`
-
 `;

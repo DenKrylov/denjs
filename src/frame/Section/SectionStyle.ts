@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const WrapperSection = styled.section`
+    flex: 1 0 auto;
     display: flex;
-    background: blue;
+    flex-direction: column;
 `;

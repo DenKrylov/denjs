@@ -4,11 +4,11 @@ import { Main } from "../Main/Main"
 import { WrapperSection } from "./SectionStyle"
 
 export const Section = () => {
-    return (
-        <WrapperSection>
-            <Main />
-            <Development />
-            <Design />
-        </WrapperSection>
-    )
+  return (
+    <WrapperSection>
+      <Main />
+      <Development />
+      <Design />
+    </WrapperSection>
+  )
 }
