@@ -3,13 +3,14 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface ITheme {
     isDarkTheme: boolean;
-
+    
     window: {
       borderRadius: string,
     }
 
     button: {
       borderRadius: string,
+      transition: number,
     }
 
     input: {
@@ -24,6 +25,7 @@ declare module 'styled-components' {
     bg: {
       main: string;
       secondary: string;
+      blackout: string;
     };
   }
 }

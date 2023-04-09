@@ -9,6 +9,7 @@ export const theme: ITheme = {
 
   button: {
     borderRadius: "5px",
+    transition: 300,
   },
 
   input: {
@@ -23,5 +24,6 @@ export const theme: ITheme = {
   bg: {
     main: 'rgba(255, 255, 255, 1)',
     secondary: 'rgba(0, 0, 0, 1)',
+    blackout: 'rgba(255, 255, 255, 0.3)',
   }
 };

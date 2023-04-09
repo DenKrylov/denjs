@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../theme";
 
 export const WrapperForm = styled.div`
   position: absolute;
@@ -7,7 +8,7 @@ export const WrapperForm = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, .3);
+  background-color: ${theme.bg.blackout};
 `;
 
 export const WindowForm = styled.form`
@@ -19,7 +20,7 @@ export const WindowForm = styled.form`
   height: 40rem;
   width: 50rem;
   border-radius: 0.5rem;
-  border: 0.1rem solid black;
+  border: 0.1rem solid ${theme.color.secondary};
   input {
     margin-bottom: 2rem;
   }

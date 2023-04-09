@@ -1,12 +1,14 @@
 import { useState } from "react"
 import { Button } from "../../components/Button/Button"
 import { ElementListNav, LineNav, ListNav, WrapperNav } from "./NavStyle"
+import { useRecoilState } from "recoil";
+import { sectionState } from "../../states/section/section";
 
 export const Nav = () => {
 
-  const [activeElement, setActiveElement] = useState<number>(0);
+  const [section, setSection] = useRecoilState(sectionState);
 
-  const list = ["Main", "Develop", "Design", "Service"];
+  const list = ["Начало", "Разработка", "Дизайн", "Service"];
 
   return (
     <WrapperNav>
@@ -14,7 +16,12 @@ export const Nav = () => {
       <ListNav>
         { list.map((list: string, index: number) => {
           return (
-            <ElementListNav onClick={() => setActiveElement(index)}><Button active={activeElement === index} onTouch={() => null}><p>{list}</p></Button></ElementListNav>
+            <ElementListNav
+              key={index}
+              onClick={() => setSection(index)}
+            >
+              <Button active={section === index} onTouch={() => null}><p>{list}</p>
+            </Button></ElementListNav>
           )
         }) }
       </ListNav>
