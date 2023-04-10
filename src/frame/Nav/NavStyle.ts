@@ -11,7 +11,6 @@ export const WrapperNav = styled.nav`
 export const LineNav = styled.div`
   width: 100%;
   height: 0.1rem;
-  background: black;
   margin-bottom: 1rem;
   
 `;

@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
 
 export const WrapperMain = styled.article`
   flex: 1 0 auto;
   display: flex;
   justify-content: end;
-  background-color: ${theme.color.main};
   a {
     position: absolute;
     bottom: 1rem;

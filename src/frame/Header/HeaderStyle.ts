@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
 
 export const WrapperHeader = styled.header`
   position: fixed;
@@ -32,15 +31,15 @@ export const LinkElementHeader = styled.a`
   align-items: center;
   border-radius: .3rem;
   * {
-    fill: ${theme.color.secondary}
+    fill: ${(props) => props.theme.colors.bgSecondary};
   }
 
   :hover {
-    background-color: ${theme.bg.secondary};
+    background-color: ${(props) => props.theme.colors.bgSecondary};
   }
 
   :hover * {
-    fill: ${theme.color.main};
+    fill: ${(props) => props.theme.colors.bgMain};
   }
-  transition: ${theme.button.transition};
+  transition: 300;
 `;

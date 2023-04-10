@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
 
 interface IWrapperButton {
   height: number;
@@ -12,11 +11,11 @@ export const WrapperButton = styled.a<IWrapperButton>`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${({active}) => active ? theme.color.secondary : theme.color.main };
-  color: ${({active}) => active ? theme.color.main : theme.color.secondary};
+  background: ${(props) => props.theme.colors.bgMain};
+  color: ${(props) => props.theme.colors.textMain};
   height: ${({height}) => height}rem;
   width: ${({width}) => width}rem;
-  border: .1rem solid ${({active}) => active ? theme.color.secondary : theme.color.secondary };
-  border-radius: ${theme.button.borderRadius};
+  border: .1rem solid ${(props) => props.theme.colors.bgSecondary};
+  border-radius: 10px;
   cursor: pointer;
 `;

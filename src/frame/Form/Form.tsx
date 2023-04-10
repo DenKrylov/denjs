@@ -8,8 +8,6 @@ export const Form = () => {
 
   const setIsForm = useSetRecoilState(isFormState);
 
-  
-
   return (
     <WrapperForm onClick={() => setIsForm(false)}>
       <WindowForm>
