@@ -1,4 +1,4 @@
-import { WrapperInput } from "./InputStyle"
+import { WrapperInput } from "./InputStyle";
 
 interface IInput {
   height?: number;
@@ -6,9 +6,7 @@ interface IInput {
 }
 
 export const Input = (props: IInput) => {
-  const {height=3, width=10} = props
+  const { height = 3, width = 10 } = props;
 
-  return (
-    <WrapperInput height={height} width={width}/>
-  )
-}
+  return <WrapperInput height={height} width={width} />;
+};

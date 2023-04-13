@@ -1,13 +1,23 @@
-import 'styled-components';
+import "styled-components";
 
-declare module 'styled-components' {
-  export interface ITheme {
-    colors: {
-      textMain: string,
-      textSecondary: string,
-      bgMain: string,
-      bgSecondary: string,
-      bgBlackout: string,
-    }
+export interface ITheme {
+  colors: {
+    success: string;
+    danger: string;
+  };
+}
+
+declare module "styled-components" {
+  export interface DefaultTheme extends ITheme {
+    type: EnumTheme;
+
+    bg: {
+      main: string;
+      secondary: string;
+    };
+    color: {
+      main: string;
+      secondary: string;
+    };
   }
 }

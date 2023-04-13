@@ -1,21 +1,44 @@
-import { ITheme } from "styled-components";
+import { DefaultTheme } from "styled-components";
+import { ITheme } from "./styled";
 
-export const lightTheme: ITheme = {
+export enum EnumTheme {
+  light = "light",
+  dark = "dark",
+}
+
+const defaultTheme: ITheme = {
   colors: {
-    textMain: "rgba(0, 0, 0, 1)",
-    textSecondary: "rgba(255, 255, 255, 1)",
-    bgMain: "rgba(255, 255, 255, 1)",
-    bgSecondary: "rgba(0, 0, 0, 1)",
-    bgBlackout: "rgba(255, 255, 255, 0.3)",
-  }
+    success: "blue",
+    danger: "red",
+  },
 };
 
-export const darkTheme: ITheme = {
-  colors: {
-    textMain: "rgba(255, 255, 255, 1)",
-    textSecondary: "rgba(0, 0, 0, 1)",
-    bgMain: "rgba(0, 0, 0, 1)",
-    bgSecondary: "rgba(255, 255, 255, 1)",
-    bgBlackout: "rgba(0, 0, 0, 0.3)",
-  }
+export const darkTheme: DefaultTheme = {
+  ...defaultTheme,
+  type: EnumTheme.light,
+  bg: {
+    main: "rgb(255, 255, 255)",
+    secondary: "rgb(0, 0, 0)",
+  },
+  color: {
+    ...defaultTheme.colors,
+    main: "rgb(0, 0, 0)",
+    secondary: "rgb(255, 255, 255)",
+  },
+};
+
+export const lightTheme: DefaultTheme = {
+  ...defaultTheme,
+  type: EnumTheme.dark,
+
+  bg: {
+    main: "rgb(0, 0, 0)",
+    secondary: "rgb(255, 255, 255)",
+  },
+
+  color: {
+    ...defaultTheme.colors,
+    main: "rgb(255, 255, 255)",
+    secondary: "rgb(0, 0, 0)",
+  },
 };

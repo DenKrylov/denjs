@@ -7,7 +7,7 @@ export const WrapperForm = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.bgSecondary};
+  background-color: ${({ theme }) => theme.color.secondary};
 `;
 
 export const WindowForm = styled.form`
@@ -15,11 +15,11 @@ export const WindowForm = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.bgSecondary};
+  background-color: ${({ theme }) => theme.color.secondary};
   height: 40rem;
   width: 50rem;
   border-radius: 0.5rem;
-  border: 0.1rem solid ${(props) => props.theme.colors.bgSecondary};
+  border: 0.1rem solid ${({ theme }) => theme.color.secondary};
   input {
     margin-bottom: 2rem;
   }

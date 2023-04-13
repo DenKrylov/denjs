@@ -13,15 +13,13 @@ export const WrapperHeader = styled.header`
   padding-right: 1rem;
 `;
 
-export const LogoHeader = styled.h1`
-`;
+export const LogoHeader = styled.h1``;
 
 export const LinkListHeader = styled.ul`
   display: flex;
 `;
 
-export const ListElementHeader = styled.li`
-`;
+export const ListElementHeader = styled.li``;
 
 export const LinkElementHeader = styled.a`
   height: 2rem;
@@ -29,17 +27,17 @@ export const LinkElementHeader = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   * {
-    fill: ${(props) => props.theme.colors.bgSecondary};
+    fill: ${({ theme }) => theme.bg.secondary};
   }
 
   :hover {
-    background-color: ${(props) => props.theme.colors.bgSecondary};
+    background-color: ${({ theme }) => theme.bg.secondary};
   }
 
   :hover * {
-    fill: ${(props) => props.theme.colors.bgMain};
+    fill: ${({ theme }) => theme.bg.main};
   }
   transition: 300;
 `;

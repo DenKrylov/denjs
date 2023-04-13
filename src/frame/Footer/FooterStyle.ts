@@ -1,5 +1,3 @@
 import styled from "styled-components";
 
-export const WrapperFooter = styled.footer`
-
-`;
+export const WrapperFooter = styled.footer``;

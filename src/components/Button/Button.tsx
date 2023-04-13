@@ -10,7 +10,14 @@ interface IButton {
 }
 
 export const Button = (props: IButton) => {
-  const {children, height=3, width=10, active=false, disable=false, onTouch} = props;
+  const {
+    children,
+    height = 3,
+    width = 10,
+    active = false,
+    disable = false,
+    onTouch,
+  } = props;
 
   return (
     <WrapperButton
@@ -20,7 +27,7 @@ export const Button = (props: IButton) => {
       disable={disable}
       onClick={() => onTouch()}
     >
-      { children }
+      {children}
     </WrapperButton>
-  )
-}
+  );
+};

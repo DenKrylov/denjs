@@ -12,7 +12,6 @@ export const LineNav = styled.div`
   width: 100%;
   height: 0.1rem;
   margin-bottom: 1rem;
-  
 `;
 
 export const ListNav = styled.ul`
@@ -22,5 +21,4 @@ export const ListNav = styled.ul`
   }
 `;
 
-export const ElementListNav = styled.li`
-`;
+export const ElementListNav = styled.li``;
