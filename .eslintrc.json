@@ -1,0 +1,13 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"],
+    "comma-dangle": ["error", "only-multiline"],
+    "eol-last": ["error", "always"],
+    "camelcase": "error",
+    "no-trailing-spaces": "error",
+    "indent": ["error", "tab"],
+    "object-curly-spacing": ["error", "always"]
+  }
+}

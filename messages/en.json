@@ -1,0 +1,22 @@
+{
+	"Header": {
+		"portfolio": "Портфолио",
+		"services": "Услуги",
+		"aboutUs": "О нас",
+		"blog": "Блог",
+		"reviews": "Отзывы",
+		"price": "Цена",
+		"contacts": "Контакты",
+		"bid": "Оставить заявку"
+	},
+	"HomePage": {
+		"title": "Привет мир!",
+		"about": "Go to the about page"
+	},
+	"Footer": {
+		"subscribe": "Subscribe to our newsletter",
+		"subscribe_description": "Stay updated on new releases and features, guides, and case studies.",
+		"placeholder": "you@email.com",
+		"button": "Subscribe"
+	}
+}

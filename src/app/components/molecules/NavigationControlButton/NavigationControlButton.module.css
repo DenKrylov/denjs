@@ -1,0 +1,40 @@
+.ncb::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: rgba(255, 255, 255);
+  transition: transform .15s ease;
+  transform: translateY(-4px) rotate(0deg);
+}
+
+.ncb_close::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: rgba(255, 255, 255);
+  transition: transform .15s ease;
+  transform: translateY(1px) rotate(45deg);
+}
+
+.ncb::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: rgba(255, 255, 255);
+  transition: transform .15s ease;
+  transform: translateY(4px) rotate(0deg);
+}
+  
+.ncb_close::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: rgba(255, 255, 255);
+  transform: translateY(4px) rotate(0deg);
+  transition: transform .15s ease;
+  transform: translateY(-1px) rotate(-45deg);
+}
