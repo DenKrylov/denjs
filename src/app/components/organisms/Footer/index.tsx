@@ -3,61 +3,9 @@ import { Subscribe } from "../../molecules/Subscribe";
 import { ChoiceTheme } from "../../molecules/ChoiceTheme/inddex";
 import { ListLinksImagas } from "../../molecules/ListLinksImagas";
 import { Logo } from "../../molecules/Logo";
+import { listLinkPrivate, listLinkPublic, listServices } from "@/app/constants";
 
 export function Footer() {
-
-	const lists = [
-		{
-			title: "Разработка",
-			lists: ["Лендинг", "Сайт-визитка", "Сайт-католог", "Интернет-магазин"]
-		},
-		{
-			title: "Дизайн",
-			lists: ["UI/UX дизайн", "Дизайн сайтов", "Дизайн поддержка", "Логотипы"]
-		}
-	];
-
-	const listLinkPrivate = [
-		{
-			href: "tg://msg?phone=+78959372191",
-			src: "/telegram.svg",
-			alt: "telegram"
-		},
-		{
-			href: "https://wa.me/79859372191",
-			src: "/whatsapp.svg",
-			alt: "whatsapp"
-		},
-		{
-			href: "mailto:vlad@htmlbook.ru?subject=Вопрос по HTML",
-			src: "/mail.svg",
-			alt: "mail"
-		}
-	];
-
-	const listLinkPublic = [
-		{
-			href: "tg://msg?phone=+78959372191",
-			src: "/telegram.svg",
-			alt: "telegram"
-		},
-		{
-			href: "/",
-			src: "/behance.svg",
-			alt: "behance"
-		},
-		{
-			href: "https://vk.com/deniskrilov",
-			src: "/vk.svg",
-			alt: "vk"
-		},
-		{
-			href: "https://www.youtube.com/",
-			src: "/github.svg",
-			alt: "github"
-		},
-	];
-
 	return (
 		<footer className="flex justify-around items-center border-t border-t-neutral-800">
 			<div className="w-[1280px] flex flex-col justify-between py-9 px-6">
@@ -71,9 +19,9 @@ export function Footer() {
 							</li>
 						</ul>
 					</li>
-					{lists.map((list) => (
-						<li key={list.title} className="max-w-60">
-							<FooterList title={list.title} lists={list.lists} />
+					{listServices.map((service) => (
+						<li key={service.title} className="max-w-60">
+							<FooterList title={service.title} lists={service.lists} />
 						</li>
 					))}
 					<li className="max-w-60"><Subscribe /></li>

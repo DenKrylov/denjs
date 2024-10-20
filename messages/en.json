@@ -1,4 +1,8 @@
 {
+	"Main": {
+		"name": "Denjs",
+		"service": "Веб-студия Denjs."
+	},
 	"Header": {
 		"portfolio": "Портфолио",
 		"services": "Услуги",

@@ -9,6 +9,7 @@
   --text-accent: rgb(82, 168, 255);
   --bg-primary: rgb(255, 255, 255);
   --bg-secondary: rgb(242, 242, 242);
+  --bg-secondary-hover: rgba(242, 242, 242, .8);
   --bg-tertiary: rgb(23, 23, 23);
   --bg-active: rgb(230, 230, 230);
   --bg-header: rgba(255, 255, 255, .8);
@@ -29,7 +30,7 @@
     --text-tertiary: rgb(0, 0, 0);
     --text-accent: rgb(82, 168, 255);
     --bg-primary: rgb(0, 0, 0);
-    --bg-secondary: rgb(17, 17, 17);
+    --bg-secondary: rgb(10, 10, 10);
     --bg-tertiary: rgb(237, 237, 237);
     --bg-active: rgb(41, 41, 41);
     --bg-header: rgba(0, 0, 0, .8);

@@ -1,12 +1,16 @@
+"use client";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { NavigationControlButton } from "../../molecules/NavigationControlButton";
 import { ListLinksImagas } from "../../molecules/ListLinksImagas";
-import { Button } from "@headlessui/react";
 import { Logo } from "../../molecules/Logo";
+import { Button } from "../../atoms/Button";
+import { Bid } from "../Bid";
+import { useState } from "react";
 
 export function Header() {
 	const t = useTranslations("Header");
+	const [isBid, setIsBid] = useState(false);
 
 	const PAGES = [
 		{
@@ -54,27 +58,28 @@ export function Header() {
 	];
 
 	return (
-		<header className="sticky top-0 flex px-6 h-16 justify-around items-center shadow-header backdrop-blur-md">
-			<nav className="max-w-header flex flex-auto justify-between">
-				<ul className="flex gap-6 items-center">
-					<li>
-						<Logo />
-						<NavigationControlButton />
-					</li>
-					{PAGES.map((list) =>
-						<li key={list.title} className="max-lg:hidden">
-							<Link href={list.route} className="transition-[1000ms] whitespace-nowrap text-sm break-normal">
-								{list.title}
-							</Link>
-						</li>)}
-				</ul>
-				<div className="flex items-center">
-					<ListLinksImagas listLink={contactList} />
-					<Button className="inline-flex items-center gap-2 rounded-md py-1 px-3 text-tertiary text-sm/6 whitespace-nowrap font-semibold focus:outline-none bg-tertiary">
-						{t("bid")}
-					</Button>
-				</div>
-			</nav>
-		</header>
+		<>
+			<header className="z-50 sticky top-0 flex px-6 h-16 justify-around items-center shadow-header bg-transparent backdrop-blur-md">
+				<nav className="max-w-header flex flex-auto justify-between">
+					<ul className="flex gap-6 items-center">
+						<li>
+							<Logo />
+							<NavigationControlButton />
+						</li>
+						{PAGES.map((list) =>
+							<li key={list.title} className="max-lg:hidden">
+								<Link href={list.route} className="transition-[1000ms] whitespace-nowrap text-sm break-normal">
+									{list.title}
+								</Link>
+							</li>)}
+					</ul>
+					<div className="flex items-center">
+						<ListLinksImagas listLink={contactList} />
+						<Button accent>{t("bid")}</Button>
+					</div>
+				</nav>
+			</header>
+			{isBid && <Bid setIsBid={setIsBid} />}
+		</>
 	);
 }

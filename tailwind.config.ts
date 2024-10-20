@@ -12,12 +12,18 @@ const config: Config = {
 				primary: "var(--text-primary)",
 				secondary: "var(--text-secondary)",
 				tertiary: "var(--text-tertiary)",
+				accent: "var(--text-accent)",
 			},
 			backgroundColor: {
 				primary: "var(--bg-primary)",
 				secondary: "var(--bg-secondary)",
 				tertiary: "var(--bg-tertiary)",
-				acitve: "var(--bg-active)"
+				acitve: "var(--bg-active)",
+				buttonPrimary: "var(--accents-1)",
+				buttonPrimaryHover: "var(--border-primary)",
+				buttonAccentPrimary: "var(--bg-tertiary)",
+				buttonAccentPrimaryHover: "var(--accents-6)",
+				transparent: "var(--bg-header)"
 			},
 			maxWidth: {
 				header: "1400px",
@@ -26,7 +32,7 @@ const config: Config = {
 				header: "inset 0 -1px 0 0 var(--accents-2)",
 			},
 			borderColor: {
-				secondary: "var(--border-primary)",
+				primary: "var(--accents-2)",
 			}
 		},
 	},

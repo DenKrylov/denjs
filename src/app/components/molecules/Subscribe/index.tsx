@@ -10,8 +10,8 @@ export function Subscribe() {
 			<li>
 				<form>
 					<label className="relative flex items-center mt-3 h-8 justify-between rounded">
-						<input type="email" className="absolute max-w-60 h-full bg-secondary my-1 pl-3 pr-28 rounded-md border-none outline-none" />
-						<button className="border border-secondary text-xs absolute py-[2px] px-2 right-1 rounded">
+						<input type="email" placeholder="you@email.com" className="absolute max-w-60 h-full bg-buttonPrimaryHover my-1 pl-3 pr-28 rounded-md border-none outline-none focus:outline-accent placeholder-secondary" />
+						<button className="bg-secondary border border-primary text-xs absolute py-[2px] px-2 right-1 rounded">
 							{t("button")}
 						</button>
 					</label>
