@@ -5,7 +5,7 @@ export const reviews = [
 		signature: "Tatiana Mac, Senior Software Engineer"
 	},
 	{
-		review: "“With Next.js at the helm of our headless tech stack, our developers can create features with velocity and speed, ultimately enabling users to create whatever, whenever they want to.”",
+		review: "“My favorite UX feedback from customers is: \"How is the app so fast?\" Because we’ve built on Next.js and Vercel since day one, our pages load in an instant, which is important when it comes to mission-critical software.”",
 		svg: "/telegram.svg",
 		signature: "Tatiana Mac, Senior Software Engineer"
 	},

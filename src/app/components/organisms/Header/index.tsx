@@ -68,14 +68,14 @@ export function Header() {
 						</li>
 						{PAGES.map((list) =>
 							<li key={list.title} className="max-lg:hidden">
-								<Link href={list.route} className="transition-[1000ms] whitespace-nowrap text-sm break-normal">
+								<Link href={list.route} className="whitespace-nowrap text-sm break-normal transition-colors hover:text-primary">
 									{list.title}
 								</Link>
 							</li>)}
 					</ul>
 					<div className="flex items-center">
 						<ListLinksImagas listLink={contactList} />
-						<Button accent>{t("bid")}</Button>
+						<Button accent classAdd="ml-2">{t("bid")}</Button>
 					</div>
 				</nav>
 			</header>

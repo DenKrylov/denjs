@@ -12,10 +12,11 @@ export function Footer() {
 				<ul className="flex flex-auto flex-wrap justify-between">
 					<li>
 						<ul>
-							<li className="flex flex-col mb-3"><Logo /></li>
-							<ListLinksImagas listLink={listLinkPrivate} />
-							<li className="text-xs mt-5">
-                Время работы: <span className="text-sm">10:00</span> - <span className="text-sm">21:00</span>
+							<li className="flex flex-col mb-3">
+								<Logo />
+							</li>
+							<li>
+								<ListLinksImagas listLink={listLinkPrivate} />
 							</li>
 						</ul>
 					</li>

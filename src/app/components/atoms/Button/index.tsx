@@ -5,11 +5,12 @@ import { ReactNode } from "react";
 interface IButton {
 	size?: "sm" | "md" | "xl";
 	accent?: boolean;
+	classAdd?: string;
 	action?: () => void
 	children?: ReactNode
 }
 
-export function Button({ size = "md", accent = false, action, children } : IButton): JSX.Element {
+export function Button({ size = "md", accent = false, classAdd, action, children } : IButton): JSX.Element {
 	const sizeCss = () => {
 		switch(true) {
 		case size === "md":
@@ -35,7 +36,8 @@ export function Button({ size = "md", accent = false, action, children } : IButt
 				clsx(
 					"transition-colors inline-flex items-center border border-primary rounded-md whitespace-nowrap focus:outline-none font-medium",
 					sizeCss(),
-					colorCss()
+					colorCss(),
+					classAdd
 				)
 			}
 		>

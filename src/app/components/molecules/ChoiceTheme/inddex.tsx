@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Button } from "@headlessui/react";
-import { ComputerDesktopIcon, MoonIcon, SunIcon } from "@heroicons/react/16/solid";
+import { ComputerDesktopIcon, MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 
 type Themes = "dark" | "auto" | "light"
 
 const list = [
-	<SunIcon key="light" className="h-5 w-5" />,
-	<ComputerDesktopIcon key="auto" className="h-5 w-5" />,
-	<MoonIcon key="dark" className="h-5 w-5" />
+	<SunIcon key="light" className="h-5 w-5 hover:stroke-primary" />,
+	<ComputerDesktopIcon key="auto" className="h-5 w-5 hover:stroke-primary" />,
+	<MoonIcon key="dark" className="h-5 w-5 hover:stroke-primary" />
 ];
 
 export function ChoiceTheme() {
@@ -48,7 +48,7 @@ export function ChoiceTheme() {
 	};
 
 	return (
-		<div className="p-0.5 flex border rounded-full border-neutral-700">
+		<div className="p-0.5 flex border rounded-full border-primary">
 			{list.map((icon) => (
 				<Button
 					key={icon.key}
